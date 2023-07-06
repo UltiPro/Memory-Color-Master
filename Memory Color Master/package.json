@@ -1,12 +1,12 @@
 {
   "name": "memory-color-master",
   "version": "1.0.0",
-  "description": "",
+  "description": "Memory Color Master created by Patryk 'UltiPro' Wójtowicz using JavaScript jQuery.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Patryk 'UltiPro' Wójtowicz",
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.7.0"
