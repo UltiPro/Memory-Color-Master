@@ -1,4 +1,10 @@
 $(function () {
+    const template = $("#game-box-item-template").html();
+
+    for (let i = 0; i < 30; i++) $(".game-box").append(template);
+
+    const all = $(".game-box-item");
+
     $("#reset-button").on("click", function (e) {
 
         const circle = document.createElement('span');
@@ -11,5 +17,9 @@ $(function () {
         setTimeout(() => {
             circle.remove();
         }, 300);
+    });
+
+    all.on("click", function () {
+
     });
 });

@@ -8,6 +8,7 @@
 
 :root {
     --box-size: 475px;
+    --rows: 6;
     --text: #fff;
     --background: tomato;
     --second-background: royalblue;
@@ -28,20 +29,65 @@ body {
 }
 
 .game-score {
+    margin-top: 1rem;
     text-align: center;
     font-weight: bold;
     font-size: 2.5rem;
 }
 
-
-
-
-
-
 .game-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: var(--box-size);
+    width: var(--box-size);
+    margin-top: 2rem;
 }
 
+.game-box-item {
+    width: calc(var(--box-size) / var(--rows));
+    height: calc(var(--box-size) / var(--rows));
+    margin: 5px;
+    perspective: 100px;
+}
+
+
+
+
+
+.game-box-item-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0.25rem solid var(--second-background);
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.game-box-item:hover .game-box-item-inner {
+    transform: rotateY(180deg);
+}
+
+.game-box-item-inner-front,
+.game-box-item-inner-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.game-box-item-inner-back {
+    background-color: #2228;
+    transform: rotateY(180deg);
+}
+
+.game-box-item-inner-front {
+    background-color: #2228;
+}
 
 
 
@@ -62,7 +108,7 @@ body {
     font-weight: bold;
     font-size: 2rem;
     background-color: var(--second-background);
-    border-radius: 6px;
+    border-radius: 0.5rem;
     cursor: pointer;
     border: none;
     overflow: hidden;
@@ -77,8 +123,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 80px;
-    height: 80px;
+    width: calc(var(--box-size) - 100px);
+    height: calc(var(--box-size) - 100px);
     background-color: var(--text);
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0);
