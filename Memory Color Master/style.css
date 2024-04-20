@@ -16,7 +16,7 @@
     --dark-light: #2228;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 440px) {
     :root {
         --box-size: 300px;
     }
