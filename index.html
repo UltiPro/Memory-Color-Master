@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Color Master</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game">
+        <div class="game-score">
+            Your time: <span id="score">--:--</span>
+        </div>
+        <div class="game-box">
+            <template id="game-box-item-template">
+                <div class="game-box-item">
+                    <div class="game-box-item-inner">
+                        <div class="game-box-item-inner-front"></div>
+                        <div class="game-box-item-inner-back"></div>
+                    </div>
+                </div>
+            </template>
+        </div>
+        <div class="game-restart">
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.js"></script>
+<script src="index.js"></script>
+
+</html>
