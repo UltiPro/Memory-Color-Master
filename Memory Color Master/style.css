@@ -16,13 +16,13 @@
     --dark-light: #2228;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 480px) {
     :root {
         --box-size: 300px;
     }
 
     .game-score {
-        font-size: 0.5rem;
+        font-size: 2rem;
     }
 }
 
