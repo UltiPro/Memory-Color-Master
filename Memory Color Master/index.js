@@ -1,9 +1,4 @@
 $(() => {
-    if (devicePixelRatio == 1.25) document.body.style.zoom = 0.8;
-    if (devicePixelRatio == 1.5) document.body.style.zoom = 0.667;
-    if (devicePixelRatio == 1.75) document.body.style.zoom = 0.5715;
-    if (devicePixelRatio == 2.0) document.body.style.zoom = 0.5;
-
     const letters = "0123456789ABCDEF";
 
     function getRandomColor() {

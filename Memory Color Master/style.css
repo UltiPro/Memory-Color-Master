@@ -16,6 +16,12 @@
     --dark-light: #2228;
 }
 
+@media (max-width: 420px) {
+    :root {
+        --box-size: 300px;
+    }
+}
+
 html,
 body {
     display: flex;
