@@ -84,7 +84,6 @@ body {
 
 .game-box-you-won {
     color: var(--dark);
-    text-align: center;
     text-shadow: 2px 2px 2px var(--text);
     font-size: 4rem;
     font-weight: bolder;
