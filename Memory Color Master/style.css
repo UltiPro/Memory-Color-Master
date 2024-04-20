@@ -16,16 +16,6 @@
     --dark-light: #2228;
 }
 
-@media (max-width: 480px) {
-    :root {
-        --box-size: 300px;
-    }
-
-    .game-score {
-        font-size: 2rem;
-    }
-}
-
 html,
 body {
     display: flex;
@@ -134,5 +124,15 @@ body {
     to {
         transform: translate(-50%, -50%) scale(2);
         opacity: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --box-size: 300px;
+    }
+
+    .game-score {
+        font-size: 2rem;
     }
 }
