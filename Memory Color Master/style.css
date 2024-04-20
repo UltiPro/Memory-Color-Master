@@ -10,9 +10,10 @@
     --box-size: 475px;
     --rows: 6;
     --text: #fff;
-    --background: tomato;
-    --second-background: royalblue;
-    --won-text: limegreen;
+    --background: #ef8354;
+    --second-background: #4f5d75;
+    --dark: #2d3142;
+    --dark-light: #2228;
 }
 
 html,
@@ -21,17 +22,13 @@ body {
     justify-content: center;
     align-items: center;
     color: var(--text);
-    text-shadow: 0px 0px 12px var(--second-background);
     background-color: var(--background);
-}
-
-.game {
-    width: var(--box-size);
 }
 
 .game-score {
     margin-top: 1rem;
     text-align: center;
+    text-shadow: 0px 0px 6px var(--second-background);
     font-weight: bold;
     font-size: 2.5rem;
 }
@@ -54,27 +51,13 @@ body {
     perspective: 100px;
 }
 
-
-
-
-.game-box-you-won {
-    color: var(--won-text);
-    font-size: 4rem;
-    text-shadow: 0px 0px 6px var(--second-background);
-}
-
 .game-box-item-inner {
-    position: relative;
     height: 100%;
     width: 100%;
     border: 0.25rem solid var(--second-background);
     cursor: pointer;
     transition: transform 0.5s;
     transform-style: preserve-3d;
-}
-
-.game-box-item .game-box-item-inner {
-    /*transform: rotateY(180deg);*/
 }
 
 .game-box-item-inner-front,
@@ -87,25 +70,27 @@ body {
 }
 
 .game-box-item-inner-back {
-    background-color: #2228;
     transform: rotateY(180deg);
 }
 
 .game-box-item-inner-front {
-    background-color: #2228;
+    background-color: var(--dark-light);
 }
 
+.game-box-you-won {
+    color: var(--dark);
+    font-size: 4rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px var(--text);
+}
 
-
-
-
-.game-reset {
+.game-restart {
     position: absolute;
     bottom: 0;
     width: var(--box-size);
 }
 
-.game-reset #reset-button {
+.game-restart #restart {
     position: relative;
     width: 100%;
     padding: 0.5rem;
@@ -118,11 +103,6 @@ body {
     cursor: pointer;
     border: none;
     overflow: hidden;
-    outline: none;
-}
-
-.game-reset #reset-button:focus {
-    outline: none;
 }
 
 .circle {
