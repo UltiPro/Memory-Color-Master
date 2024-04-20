@@ -135,4 +135,8 @@ body {
     .game-score {
         font-size: 2rem;
     }
+
+    .game-box-you-won {
+        font-size: 2.5rem;
+    }
 }
