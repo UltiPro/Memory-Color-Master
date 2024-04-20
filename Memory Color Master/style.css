@@ -20,6 +20,10 @@
     :root {
         --box-size: 300px;
     }
+
+    .game-score {
+        font-size: 2rem;
+    }
 }
 
 html,
