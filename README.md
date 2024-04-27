@@ -1,7 +1,7 @@
 # Memory-Color-Master
 Memory Color Master created by Patryk 'UltiPro' Wójtowicz using JavaScript jQuery.
 
-Memory Color Master game written in JavaScript jQuery. The game involves discovering and remembering colors in order to match them. The game has a timer and a restart button.
+Memory Color Master is the game written in JavaScript jQuery. The game relies on discovering and remembering colors in order to match them. The game has a timer and a restart button.
 
 # Usage
 
