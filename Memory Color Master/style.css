@@ -125,7 +125,7 @@ body {
 
 @media (max-width: 485px) {
     :root {
-        --box-size: 300px;
+        --box-size: 320px;
     }
 
     .game-score {
