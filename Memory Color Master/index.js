@@ -76,7 +76,7 @@ $(() => {
     const timer = setInterval(() => {
         time = new Date(new Date - startTime);
 
-        $("#score").text((time.getMinutes() < 10 ? "0" + time.getMinutes() : getMinutes()) +
+        $("#game-score-value").text((time.getMinutes() < 10 ? "0" + time.getMinutes() : getMinutes()) +
             ":" + (time.getSeconds() < 10 ? "0" + time.getSeconds() : time.getSeconds()));
 
         if (isGameOver) {
@@ -86,7 +86,7 @@ $(() => {
         }
     }, 1000);
 
-    $("#restart").on("click", function (e) {
+    $("#game-restart-button").on("click", function (e) {
         const circle = document.createElement("span");
         circle.classList.add("circle");
         circle.style.top = (e.clientY - e.delegateTarget.offsetParent.offsetTop) + "px";

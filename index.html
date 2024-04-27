@@ -10,23 +10,21 @@
 </head>
 
 <body>
-    <div class="game">
-        <div class="game-score">
-            Your time: <span id="score">--:--</span>
-        </div>
-        <div class="game-box">
-            <template id="game-box-item-template">
-                <div class="game-box-item">
-                    <div class="game-box-item-inner">
-                        <div class="game-box-item-inner-front"></div>
-                        <div class="game-box-item-inner-back"></div>
-                    </div>
+    <div class="game-score">
+        Your time: <span id="game-score-value">--:--</span>
+    </div>
+    <div class="game-box">
+        <template id="game-box-item-template">
+            <div class="game-box-item">
+                <div class="game-box-item-inner">
+                    <div class="game-box-item-front"></div>
+                    <div class="game-box-item-back"></div>
                 </div>
-            </template>
-        </div>
-        <div class="game-restart">
-            <button id="restart">Restart</button>
-        </div>
+            </div>
+        </template>
+    </div>
+    <div class="game-restart">
+        <button id="game-restart-button">Restart</button>
     </div>
 </body>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.js"></script>
