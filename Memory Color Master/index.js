@@ -28,24 +28,20 @@ $(() => {
     }
 
     const template = $("#game-box-item-template").html();
-    const randomColors = [];
     let squaresNum = 15;
 
-    for (let i = 0; i < squaresNum; i++) {
-        randomColors[i] = getRandomColor();
-        $(".game-box").append(template);
-        $(".game-box").append(template);
-    }
+    for (let i = 0; i < squaresNum * 2; i++) $(".game-box").append(template);
 
     const numbers = [...Array(squaresNum * 2).keys()];
-    let square;
+    let color, square;
 
     for (let i = 0; i < squaresNum; i++) {
+        color = getRandomColor();
         for (let j = 0; j < 2; j++) {
             square = numbers[Math.floor(Math.random() * numbers.length)];
             numbers.splice(numbers.indexOf(square), 1);
             $(".game-box-item").eq(square).attr("number", (j == 0 ? "f" : "s") + i);
-            $(".game-box-item").eq(square).children().children().eq(1).css("background", randomColors[i]);
+            $(".game-box-item").eq(square).children().children().eq(1).css("background", color);
         }
     }
 
